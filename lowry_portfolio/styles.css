@@ -1,0 +1,231 @@
+ body {
+    color: #020101;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    background-image: url(images/bokeh.jpg);
+    background-size: cover;
+  }
+#container {
+    width: 1200px;
+    height: auto;
+    background-color: white;
+    margin: auto;
+}
+aside {
+    width: 150px;
+    height: 3800px;
+    float: left;
+    background-color: #9D9D9D;
+}
+/*float the aside so it displays next to main*/
+header {
+    width: 1200px;
+    height: 250px;
+    font-size: 16px;
+    background-image: url(images/Screen%20Shot%202023-03-03%20at%2011.39.34%20AM.png);
+    background-repeat: no-repeat;
+    background-position: center;
+	margin: 50px 0px 0px 0px
+}
+/*float the main so it displays next to the aside. Reduce by the size of the aside so they line up evenly*/
+main {
+    width: 1000px;
+    height: 38
+		00px;
+    background-color: white;
+    float: left;
+    font-size: 15pt;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+th, td {
+    border: medium solid #000000;
+    border-radius: 20px;
+}
+img {
+    float: right;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.floatleft {
+	float: left
+}
+
+article {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+}
+/*clear the footer so it shows up to the right place again*/
+footer {
+    background-color: #699AD4;
+    width: 1200
+		px;
+    height: 50px;
+    float: none;
+    clear: both;
+}
+h1 {
+    color: #699AD4;
+  font-family: "antonia-variable",sans-serif;
+  font-variation-settings: 'wght' 300, 'opsz' 8;
+}
+p {
+		font-family: "area-normal", sans-serif;
+font-weight: 400;
+font-style: italic;
+}
+
+h3 {
+    font-size: 12pt;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+nav {
+    width: 1200px;
+    height: 50px;
+}
+#container nav li {
+    display: block;
+    list-style-type: none;
+    float: left;
+    width: 60px;
+    margin-left: 0px;
+    margin-right: 60px;
+    font-size: 18px;
+    font-family: "madre-script", sans-serif;
+}
+#container nav ul {
+    margin: auto;
+    width: 600px;
+}
+
+nav a:link {
+    color: #6DE7FF;
+    text-decoration: none;
+    padding: 10px;
+}
+nav a:visited {
+    text-decoration: none;
+    color: #6D17DB;
+}
+nav a:hover {
+    text-decoration: none;
+    color: #000000;
+	background-color: #6DE7FF;
+	padding: 10px;
+	border-radius: 20px;
+}
+nav a:active {
+    text-decoration: none;
+    color: #6D17DB;
+}
+.user_email {
+}
+.submit_btn {
+    width: 160px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #6382CA;
+    color: #FBFAFA;
+    font-size: 16px;
+    
+}
+
+.submit_btn:hover {
+	-webkit-box-shadow: 6px 6px 25px 5px #605F5F;
+    box-shadow: 6px 6px 25px 5px #605F5F;
+	
+}
+.column {
+    float: left;
+    width: 250px;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+/*rules the page will follow for tablet-sized devices*/
+@media (max-width : 1024px ){
+	#container {
+		width: 798px
+	}
+	header{
+		width: 798px
+	}
+	nav {
+		width: 798px
+	}
+	main{
+		width: 580px
+			
+	}
+	
+	footer {
+		width: 798px
+	}
+	.column{
+    margin: 0px 20px 0px 20px;
+  }
+}
+
+
+	
+
+/*rules the page will follow on mobile devices*/
+
+@media only screen and (max-width:375px){
+	#container {
+		width: 300px
+	}
+	header{
+    width: 300px;
+    height: 150px;
+    background-image: url(header300px.jpg);
+	}
+	nav {
+    width: 300px;
+	height:	20px;
+		position: static;
+			
+	}
+	main{
+    width: 300px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    margin: auto;
+    padding-left: 0px;    		
+	}
+	aside {
+		display: none;
+	}
+	
+	footer {
+		width: 300px
+	}
+	.column{
+    margin: auto;
+  }
+	#container nav li{
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    font-size: small;		
+	}
+	img .column {
+    width: 200px;
+    margin: auto;
+    height: 200px;
+	}	
+
+}
